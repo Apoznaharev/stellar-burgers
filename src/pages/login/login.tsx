@@ -3,7 +3,7 @@ import { LoginUI } from '@ui-pages';
 import { TLoginData } from '@api';
 import { logIn, getIsAuth } from '../../services/slices/UserSlice';
 import { useDispatch } from '../../services/store';
-import { useSelector } from 'react-redux';
+import { useSelector } from '../../services/store';
 import { Navigate } from 'react-router-dom';
 
 export const Login: FC = () => {
