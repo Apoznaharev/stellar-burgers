@@ -55,7 +55,7 @@ export const burgerConstructorSlice = createSlice({
       prepare: (ingredient: TIngredient) => {
         const id = nanoid();
         return {
-          payload: { ...ingredient, id }
+          payload: { ...ingredient, id: id }
         };
       }
     },
@@ -65,7 +65,7 @@ export const burgerConstructorSlice = createSlice({
     ) => {
       state.constructorItems.ingredients =
         state.constructorItems.ingredients.filter(
-          (item) => item._id !== action.payload._id
+          (item) => item.id !== action.payload.id
         );
     },
     moveUpIngredient: (state, action: PayloadAction<number>) => {
