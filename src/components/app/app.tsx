@@ -17,7 +17,7 @@ import {
 } from '@pages';
 import { Modal, AppHeader } from '@components';
 import { OrderInfo, IngredientDetails } from '@components';
-import { ProtectedRoute } from '../../utils/protected-route';
+import { ProtectedRoute } from '../protected-route';
 import { checkUserAuth } from '../../services/slices/UserSlice';
 
 const App = () => {
