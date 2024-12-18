@@ -1,5 +1,6 @@
 import { FC, SyntheticEvent, useState } from 'react';
 import { RegisterUI } from '@ui-pages';
+import { registerUserApi } from '@api';
 
 export const Register: FC = () => {
   const [userName, setUserName] = useState('');
@@ -8,6 +9,9 @@ export const Register: FC = () => {
 
   const handleSubmit = (e: SyntheticEvent) => {
     e.preventDefault();
+    registerUserApi({ email, name: userName, password }).then((res) => {
+      console.log(res);
+    });
   };
 
   return (
