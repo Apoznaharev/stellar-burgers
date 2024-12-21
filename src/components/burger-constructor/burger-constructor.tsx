@@ -8,9 +8,9 @@ import {
   gerOrderRequest,
   createOrder,
   clear
-} from '../../services/slices/BurgerConstructorSlice';
+} from '../../services/slices/BurgerConstructorSlice/BurgerConstructorSlice';
 import { useNavigate } from 'react-router-dom';
-import { getIsAuth } from '../../services/slices/UserSlice';
+import { getIsAuth } from '../../services/slices/UserSlice/UserSlice';
 
 export const BurgerConstructor: FC = () => {
   const dispatch = useDispatch();

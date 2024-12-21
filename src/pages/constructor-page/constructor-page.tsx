@@ -4,7 +4,7 @@ import { BurgerConstructor } from '../../components';
 import { Preloader } from '../../components/ui';
 import { FC } from 'react';
 import { useSelector } from '../../services/store';
-import { getLoading } from '../../services/slices/IngredientsSlice';
+import { getLoading } from '../../services/slices/IngredientsSlice/IngredientsSlice';
 
 export const ConstructorPage: FC = () => {
   const isIngredientsLoading = useSelector(getLoading);

@@ -5,7 +5,7 @@ import {
   getUser,
   updateUser,
   getLoginRequest
-} from '../../services/slices/UserSlice';
+} from '../../services/slices/UserSlice/UserSlice';
 import { TUser } from '@utils-types';
 import { Preloader } from '@ui';
 

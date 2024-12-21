@@ -1,9 +1,9 @@
 import { createSlice, createAsyncThunk } from '@reduxjs/toolkit';
 import { TOrder } from '@utils-types';
-import { getOrdersApi } from '@api';
-import { USER_ORDERS_SLICE_NAME } from '../slicesName';
+import { getOrdersApi } from '../../../utils/burger-api';
+import { USER_ORDERS_SLICE_NAME } from '../../slicesName';
 
-type TUserOrdersState = {
+export type TUserOrdersState = {
   orders: TOrder[];
   loading: boolean;
   error: null | string | undefined;

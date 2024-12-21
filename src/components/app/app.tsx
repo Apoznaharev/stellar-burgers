@@ -3,7 +3,7 @@ import styles from './app.module.css';
 import { Route, Routes, useNavigate, useLocation } from 'react-router-dom';
 import { useDispatch } from '../../services/store';
 import { useEffect } from 'react';
-import { fetchIngredients } from '../../services/slices/IngredientsSlice';
+import { fetchIngredients } from '../../services/slices/IngredientsSlice/IngredientsSlice';
 import {
   ConstructorPage,
   Feed,
@@ -18,7 +18,7 @@ import {
 import { Modal, AppHeader } from '@components';
 import { OrderInfo, IngredientDetails } from '@components';
 import { ProtectedRoute } from '../protected-route';
-import { checkUserAuth } from '../../services/slices/UserSlice';
+import { checkUserAuth } from '../../services/slices/UserSlice/UserSlice';
 
 const App = () => {
   const navigate = useNavigate();
