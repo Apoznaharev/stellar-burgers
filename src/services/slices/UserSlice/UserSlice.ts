@@ -6,11 +6,11 @@ import {
   loginUserApi,
   updateUserApi,
   registerUserApi
-} from '@api';
-import { getCookie, setCookie, deleteCookie } from '../../utils/cookie';
-import { USER_SLICE_NAME } from '../slicesName';
+} from '../../../utils/burger-api';
+import { getCookie, setCookie, deleteCookie } from '../../../utils/cookie';
+import { USER_SLICE_NAME } from '../../slicesName';
 import { TRegisterData } from '@api';
-type TUserState = {
+export type TUserState = {
   user: TUser | null;
   error: string | null;
   isAuth: boolean;

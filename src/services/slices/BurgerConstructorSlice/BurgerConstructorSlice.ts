@@ -5,10 +5,10 @@ import {
   nanoid
 } from '@reduxjs/toolkit';
 import { TConstructorIngredient, TOrder, TIngredient } from '@utils-types';
-import { BURGER_CONSTRUCTOR_SLICE_NAME } from '../slicesName';
-import { orderBurgerApi } from '@api';
+import { BURGER_CONSTRUCTOR_SLICE_NAME } from '../../slicesName';
+import { orderBurgerApi } from '../../../utils/burger-api';
 
-type TStateBurgerConstructor = {
+export type TStateBurgerConstructor = {
   constructorItems: {
     ingredients: TConstructorIngredient[];
     bun: TIngredient | null;

@@ -3,11 +3,14 @@ import { Preloader } from '../ui/preloader';
 import { OrderInfoUI } from '../ui/order-info';
 import { TIngredient } from '@utils-types';
 import { useSelector } from '..//../services/store';
-import { getIngridients } from '../../services/slices/IngredientsSlice';
+import { getIngridients } from '../../services/slices/IngredientsSlice/IngredientsSlice';
 import { useParams } from 'react-router-dom';
-import { fetchOrder, getOrder } from '../../services/slices/OrderSlice';
+import {
+  fetchOrder,
+  getOrder
+} from '../../services/slices/OrderSlice/OrderSlice';
 import { useDispatch } from '../../services/store';
-import { getFeed } from '../../services/slices/FeedSlice';
+import { getFeed } from '../../services/slices/FeedSlice/FeedSlice';
 
 export const OrderInfo: FC = () => {
   const dispatch = useDispatch();

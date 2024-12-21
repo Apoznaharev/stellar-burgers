@@ -1,9 +1,9 @@
 import { createSlice, createAsyncThunk } from '@reduxjs/toolkit';
 import { TOrder } from '@utils-types';
-import { getFeedsApi } from '@api';
-import { FEED_SLICE_NAME } from '../slicesName';
+import { getFeedsApi } from '../../../utils/burger-api';
+import { FEED_SLICE_NAME } from '../../slicesName';
 
-type TFeedState = {
+export type TFeedState = {
   orders: TOrder[];
   total: number;
   totalToday: number;

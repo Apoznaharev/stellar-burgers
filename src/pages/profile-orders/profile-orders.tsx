@@ -6,7 +6,7 @@ import {
   getUserOrders,
   getUserOrdersLoading,
   fetchUserOrders
-} from '../../services/slices/UserOrdersSlice';
+} from '../../services/slices/UserOrdersSlice/UserOrdersSlice';
 import { Preloader } from '@ui';
 export const ProfileOrders: FC = () => {
   const dispatch = useDispatch();
